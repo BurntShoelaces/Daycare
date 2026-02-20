@@ -8,6 +8,7 @@
 
 config_version=5
 
+<<<<<<< HEAD
 [animation]
 
 compatibility/default_parent_skeleton_in_mesh_instance_3d=true
@@ -138,3 +139,20 @@ renderer/rendering_method.mobile="gl_compatibility"
 environment/defaults/default_clear_color=Color(0, 0, 0, 1)
 2d/snap/snap_2d_transforms_to_pixel=true
 2d/snap/snap_2d_vertices_to_pixel=true
+=======
+[application]
+
+config/name="Daycare"
+run/main_scene="uid://b1cjj5l68kx0u"
+config/features=PackedStringArray("4.6", "Forward Plus")
+config/icon="res://icon.svg"
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)
+>>>>>>> 47828c0f07d37aeaadcc7100fc643b6ef17aa8b7
