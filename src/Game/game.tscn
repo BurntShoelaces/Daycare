@@ -1,24 +1,24 @@
-[gd_scene format=3 uid="uid://n87rw5cxnnn8"]
+[gd_scene load_steps=30 format=3 uid="uid://n87rw5cxnnn8"]
 
-[ext_resource type="Script" uid="uid://c2e3ubq1fr60m" path="res://src/Game/game.gd" id="1_ne6pe"]
-[ext_resource type="Script" uid="uid://b3ff3mimpgtkh" path="res://src/Game/game_root.gd" id="1_yidwt"]
-[ext_resource type="Script" uid="uid://bq2fxd7nnh5xi" path="res://src/Game/EventHandlers/input_handler.gd" id="2_4winb"]
-[ext_resource type="Script" uid="uid://bmuviffx7hs7x" path="res://src/Game/EventHandlers/main_game_input_handler.gd" id="3_08i3b"]
-[ext_resource type="Script" uid="uid://byadxvgejnssm" path="res://src/Map/map.gd" id="3_xyl86"]
-[ext_resource type="Script" uid="uid://v3k01yftxcao" path="res://src/Map/dungeon_generator.gd" id="4_15hgc"]
-[ext_resource type="Script" uid="uid://e7jwjdsu2qpb" path="res://src/Game/EventHandlers/game_over_input_handler.gd" id="4_gxmdu"]
-[ext_resource type="Script" uid="uid://bn4l0qrk2kglt" path="res://src/Map/field_of_view.gd" id="5_bvmgb"]
-[ext_resource type="Script" uid="uid://de37tcma8n8dj" path="res://src/Game/EventHandlers/history_viewer_input_handler.gd" id="5_hrkyq"]
-[ext_resource type="Script" uid="uid://cqp4e1p0aq5di" path="res://src/Game/EventHandlers/base_input_handler.gd" id="6_ay8ab"]
+[ext_resource type="Script" path="res://src/Game/game.gd" id="1_ne6pe"]
+[ext_resource type="Script" path="res://src/Game/game_root.gd" id="1_yidwt"]
+[ext_resource type="Script" path="res://src/Game/EventHandlers/input_handler.gd" id="2_4winb"]
+[ext_resource type="Script" path="res://src/Game/EventHandlers/main_game_input_handler.gd" id="3_08i3b"]
+[ext_resource type="Script" path="res://src/Map/map.gd" id="3_xyl86"]
+[ext_resource type="Script" path="res://src/Map/dungeon_generator.gd" id="4_15hgc"]
+[ext_resource type="Script" path="res://src/Game/EventHandlers/game_over_input_handler.gd" id="4_gxmdu"]
+[ext_resource type="Script" path="res://src/Map/field_of_view.gd" id="5_bvmgb"]
+[ext_resource type="Script" path="res://src/Game/EventHandlers/history_viewer_input_handler.gd" id="5_hrkyq"]
+[ext_resource type="Script" path="res://src/Game/EventHandlers/base_input_handler.gd" id="6_ay8ab"]
 [ext_resource type="Texture2D" uid="uid://h7i8uiwlysq2" path="res://assets/images/kenney_1-bit-pack/monochrome_packed.png" id="8_kgm6f"]
 [ext_resource type="FontFile" uid="uid://bk0fq2awle8d5" path="res://assets/fonts/kenney_kenney-fonts/Fonts/Kenney Pixel.ttf" id="9_8xlja"]
-[ext_resource type="Script" uid="uid://dj3ad16fv80yk" path="res://src/GUI/mouseover_checker.gd" id="9_eusf6"]
-[ext_resource type="Script" uid="uid://ckvohi0neno32" path="res://src/GUI/hp_display.gd" id="9_njvq4"]
+[ext_resource type="Script" path="res://src/GUI/mouseover_checker.gd" id="9_eusf6"]
+[ext_resource type="Script" path="res://src/GUI/hp_display.gd" id="9_njvq4"]
 [ext_resource type="PackedScene" uid="uid://d36pgskfsvwj2" path="res://src/GUI/Reticle/reticle.tscn" id="11_n4t22"]
-[ext_resource type="Script" uid="uid://duba48dxeui6o" path="res://src/GUI/message_log.gd" id="11_xxafc"]
-[ext_resource type="Script" uid="uid://dihjypyfse0ma" path="res://src/GUI/xp_display.gd" id="16_ckyac"]
-[ext_resource type="Script" uid="uid://b62h1uqkfrs2p" path="res://src/GUI/dungeon_floor_label.gd" id="16_j80u7"]
-[ext_resource type="Script" uid="uid://c6uil4k6lguxp" path="res://src/GUI/character_info_box.gd" id="17_yvib5"]
+[ext_resource type="Script" path="res://src/GUI/message_log.gd" id="11_xxafc"]
+[ext_resource type="Script" path="res://src/GUI/xp_display.gd" id="16_ckyac"]
+[ext_resource type="Script" path="res://src/GUI/dungeon_floor_label.gd" id="16_j80u7"]
+[ext_resource type="Script" path="res://src/GUI/character_info_box.gd" id="17_yvib5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_q7j4i"]
 atlas = ExtResource("8_kgm6f")
@@ -61,7 +61,7 @@ font = ExtResource("9_8xlja")
 [sub_resource type="LabelSettings" id="LabelSettings_sr2kr"]
 font = ExtResource("9_8xlja")
 
-[node name="InterfaceRoot" type="Control" unique_id=1582930050]
+[node name="InterfaceRoot" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -70,7 +70,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_yidwt")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=820552313]
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -78,80 +78,80 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="SubViewportContainer" type="SubViewportContainer" parent="VBoxContainer" unique_id=1187190770]
+[node name="SubViewportContainer" type="SubViewportContainer" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 5.0
 stretch = true
 
-[node name="SubViewport" type="SubViewport" parent="VBoxContainer/SubViewportContainer" unique_id=2139994149]
+[node name="SubViewport" type="SubViewport" parent="VBoxContainer/SubViewportContainer"]
 disable_3d = true
 handle_input_locally = false
 canvas_item_default_texture_filter = 0
 size = Vector2i(1152, 536)
 render_target_update_mode = 4
 
-[node name="Game" type="Node2D" parent="VBoxContainer/SubViewportContainer/SubViewport" unique_id=716593178]
+[node name="Game" type="Node2D" parent="VBoxContainer/SubViewportContainer/SubViewport"]
 unique_name_in_owner = true
 script = ExtResource("1_ne6pe")
 
-[node name="InputHandler" type="Node" parent="VBoxContainer/SubViewportContainer/SubViewport/Game" unique_id=619105891]
+[node name="InputHandler" type="Node" parent="VBoxContainer/SubViewportContainer/SubViewport/Game"]
 script = ExtResource("2_4winb")
 
-[node name="MainGameInputHandler" type="Node" parent="VBoxContainer/SubViewportContainer/SubViewport/Game/InputHandler" unique_id=926222526 node_paths=PackedStringArray("reticle")]
+[node name="MainGameInputHandler" type="Node" parent="VBoxContainer/SubViewportContainer/SubViewport/Game/InputHandler" node_paths=PackedStringArray("reticle")]
 script = ExtResource("3_08i3b")
 reticle = NodePath("../../Map/Reticle")
 
-[node name="GameOverInputHandler" type="Node" parent="VBoxContainer/SubViewportContainer/SubViewport/Game/InputHandler" unique_id=419162628]
+[node name="GameOverInputHandler" type="Node" parent="VBoxContainer/SubViewportContainer/SubViewport/Game/InputHandler"]
 script = ExtResource("4_gxmdu")
 
-[node name="HistoryViewerInputHandler" type="Node" parent="VBoxContainer/SubViewportContainer/SubViewport/Game/InputHandler" unique_id=374954966]
+[node name="HistoryViewerInputHandler" type="Node" parent="VBoxContainer/SubViewportContainer/SubViewport/Game/InputHandler"]
 script = ExtResource("5_hrkyq")
 messages_panel_path = NodePath("../../../../../InfoBar/MessagesPanel")
 message_log_path = NodePath("../../../../../InfoBar/MessagesPanel/MessageLog")
 
-[node name="DummyInputHandler" type="Node" parent="VBoxContainer/SubViewportContainer/SubViewport/Game/InputHandler" unique_id=1679288906]
+[node name="DummyInputHandler" type="Node" parent="VBoxContainer/SubViewportContainer/SubViewport/Game/InputHandler"]
 script = ExtResource("6_ay8ab")
 
-[node name="Map" type="Node2D" parent="VBoxContainer/SubViewportContainer/SubViewport/Game" unique_id=1820238912]
+[node name="Map" type="Node2D" parent="VBoxContainer/SubViewportContainer/SubViewport/Game"]
 script = ExtResource("3_xyl86")
 
-[node name="DungeonGenerator" type="Node" parent="VBoxContainer/SubViewportContainer/SubViewport/Game/Map" unique_id=1050584728]
+[node name="DungeonGenerator" type="Node" parent="VBoxContainer/SubViewportContainer/SubViewport/Game/Map"]
 script = ExtResource("4_15hgc")
 
-[node name="FieldOfView" type="Node" parent="VBoxContainer/SubViewportContainer/SubViewport/Game/Map" unique_id=256435267]
+[node name="FieldOfView" type="Node" parent="VBoxContainer/SubViewportContainer/SubViewport/Game/Map"]
 script = ExtResource("5_bvmgb")
 
-[node name="Tiles" type="Node2D" parent="VBoxContainer/SubViewportContainer/SubViewport/Game/Map" unique_id=1994855868]
+[node name="Tiles" type="Node2D" parent="VBoxContainer/SubViewportContainer/SubViewport/Game/Map"]
 
-[node name="Entities" type="Node2D" parent="VBoxContainer/SubViewportContainer/SubViewport/Game/Map" unique_id=1808491413]
+[node name="Entities" type="Node2D" parent="VBoxContainer/SubViewportContainer/SubViewport/Game/Map"]
 
-[node name="MouseoverChecker" type="Node2D" parent="VBoxContainer/SubViewportContainer/SubViewport/Game/Map" unique_id=592507640]
+[node name="MouseoverChecker" type="Node2D" parent="VBoxContainer/SubViewportContainer/SubViewport/Game/Map"]
 script = ExtResource("9_eusf6")
 
-[node name="Reticle" parent="VBoxContainer/SubViewportContainer/SubViewport/Game/Map" unique_id=1183386668 instance=ExtResource("11_n4t22")]
+[node name="Reticle" parent="VBoxContainer/SubViewportContainer/SubViewport/Game/Map" instance=ExtResource("11_n4t22")]
 
-[node name="Camera2D" type="Camera2D" parent="VBoxContainer/SubViewportContainer/SubViewport/Game" unique_id=635706858]
+[node name="Camera2D" type="Camera2D" parent="VBoxContainer/SubViewportContainer/SubViewport/Game"]
 zoom = Vector2(2, 2)
 
-[node name="InfoBar" type="HBoxContainer" parent="VBoxContainer" unique_id=196319969]
+[node name="InfoBar" type="HBoxContainer" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_constants/separation = 0
 
-[node name="StatsPanel" type="PanelContainer" parent="VBoxContainer/InfoBar" unique_id=1350410385]
+[node name="StatsPanel" type="PanelContainer" parent="VBoxContainer/InfoBar"]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_styles/panel = SubResource("StyleBoxTexture_ey3id")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/InfoBar/StatsPanel" unique_id=1381506870]
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/InfoBar/StatsPanel"]
 layout_mode = 2
 
-[node name="HpDisplay" type="MarginContainer" parent="VBoxContainer/InfoBar/StatsPanel/VBoxContainer" unique_id=90631537]
+[node name="HpDisplay" type="MarginContainer" parent="VBoxContainer/InfoBar/StatsPanel/VBoxContainer"]
 layout_mode = 2
 script = ExtResource("9_njvq4")
 
-[node name="HpBar" type="ProgressBar" parent="VBoxContainer/InfoBar/StatsPanel/VBoxContainer/HpDisplay" unique_id=188764665]
+[node name="HpBar" type="ProgressBar" parent="VBoxContainer/InfoBar/StatsPanel/VBoxContainer/HpDisplay"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 1
@@ -161,7 +161,7 @@ step = 1.0
 value = 50.0
 show_percentage = false
 
-[node name="HpLabel" type="Label" parent="VBoxContainer/InfoBar/StatsPanel/VBoxContainer/HpDisplay" unique_id=611660757]
+[node name="HpLabel" type="Label" parent="VBoxContainer/InfoBar/StatsPanel/VBoxContainer/HpDisplay"]
 unique_name_in_owner = true
 layout_mode = 2
 text = "HP:30/30"
@@ -169,11 +169,11 @@ label_settings = SubResource("LabelSettings_c11as")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="XpDisplay" type="MarginContainer" parent="VBoxContainer/InfoBar/StatsPanel/VBoxContainer" unique_id=1086441440]
+[node name="XpDisplay" type="MarginContainer" parent="VBoxContainer/InfoBar/StatsPanel/VBoxContainer"]
 layout_mode = 2
 script = ExtResource("16_ckyac")
 
-[node name="XpBar" type="ProgressBar" parent="VBoxContainer/InfoBar/StatsPanel/VBoxContainer/XpDisplay" unique_id=460770658]
+[node name="XpBar" type="ProgressBar" parent="VBoxContainer/InfoBar/StatsPanel/VBoxContainer/XpDisplay"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 1
@@ -183,7 +183,7 @@ step = 1.0
 value = 50.0
 show_percentage = false
 
-[node name="XpLabel" type="Label" parent="VBoxContainer/InfoBar/StatsPanel/VBoxContainer/XpDisplay" unique_id=887167759]
+[node name="XpLabel" type="Label" parent="VBoxContainer/InfoBar/StatsPanel/VBoxContainer/XpDisplay"]
 unique_name_in_owner = true
 layout_mode = 2
 text = "XP:30/30"
@@ -191,12 +191,12 @@ label_settings = SubResource("LabelSettings_c11as")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="CharacterInfoBox" type="HBoxContainer" parent="VBoxContainer/InfoBar/StatsPanel/VBoxContainer" unique_id=845966479]
+[node name="CharacterInfoBox" type="HBoxContainer" parent="VBoxContainer/InfoBar/StatsPanel/VBoxContainer"]
 layout_mode = 2
 theme_override_constants/separation = 0
 script = ExtResource("17_yvib5")
 
-[node name="LevelLabel" type="Label" parent="VBoxContainer/InfoBar/StatsPanel/VBoxContainer/CharacterInfoBox" unique_id=38974645]
+[node name="LevelLabel" type="Label" parent="VBoxContainer/InfoBar/StatsPanel/VBoxContainer/CharacterInfoBox"]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "LVL: 1"
@@ -204,7 +204,7 @@ label_settings = SubResource("LabelSettings_5eejl")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="AttackLabel" type="Label" parent="VBoxContainer/InfoBar/StatsPanel/VBoxContainer/CharacterInfoBox" unique_id=613799807]
+[node name="AttackLabel" type="Label" parent="VBoxContainer/InfoBar/StatsPanel/VBoxContainer/CharacterInfoBox"]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "LVL: 1"
@@ -212,7 +212,7 @@ label_settings = SubResource("LabelSettings_5eejl")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="DefenseLabel" type="Label" parent="VBoxContainer/InfoBar/StatsPanel/VBoxContainer/CharacterInfoBox" unique_id=558515893]
+[node name="DefenseLabel" type="Label" parent="VBoxContainer/InfoBar/StatsPanel/VBoxContainer/CharacterInfoBox"]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "LVL: 1"
@@ -220,30 +220,30 @@ label_settings = SubResource("LabelSettings_5eejl")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="DungeonFloorLabel" type="Label" parent="VBoxContainer/InfoBar/StatsPanel/VBoxContainer" unique_id=1723970662]
+[node name="DungeonFloorLabel" type="Label" parent="VBoxContainer/InfoBar/StatsPanel/VBoxContainer"]
 layout_mode = 2
 text = "Dungeon Level: 1"
 label_settings = SubResource("LabelSettings_wggql")
 script = ExtResource("16_j80u7")
 
-[node name="MouseoverLabel" type="Label" parent="VBoxContainer/InfoBar/StatsPanel/VBoxContainer" unique_id=674298106]
+[node name="MouseoverLabel" type="Label" parent="VBoxContainer/InfoBar/StatsPanel/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 10
 label_settings = SubResource("LabelSettings_sr2kr")
 
-[node name="MessagesPanel" type="PanelContainer" parent="VBoxContainer/InfoBar" unique_id=162046734]
+[node name="MessagesPanel" type="PanelContainer" parent="VBoxContainer/InfoBar"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 2.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_ey3id")
 
-[node name="MessageLog" type="ScrollContainer" parent="VBoxContainer/InfoBar/MessagesPanel" unique_id=1867766794]
+[node name="MessageLog" type="ScrollContainer" parent="VBoxContainer/InfoBar/MessagesPanel"]
 layout_mode = 2
 horizontal_scroll_mode = 0
 vertical_scroll_mode = 3
 script = ExtResource("11_xxafc")
 
-[node name="MessageList" type="VBoxContainer" parent="VBoxContainer/InfoBar/MessagesPanel/MessageLog" unique_id=121942725]
+[node name="MessageList" type="VBoxContainer" parent="VBoxContainer/InfoBar/MessagesPanel/MessageLog"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3

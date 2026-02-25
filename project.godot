@@ -8,14 +8,13 @@
 
 config_version=5
 
-<<<<<<< HEAD
 [animation]
 
 compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 [application]
 
-config/name="Daycare"
+config/name="Complete Roguelike Tutorial"
 run/main_scene="res://src/Game/game_manager.tscn"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
@@ -127,7 +126,7 @@ look={
 }
 descend={
 "deadzone": 0.5,
-"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":4194309,"physical_keycode":0,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":60,"physical_keycode":0,"key_label":0,"unicode":60,"location":0,"echo":false,"script":null)
 ]
 }
 
@@ -139,20 +138,3 @@ renderer/rendering_method.mobile="gl_compatibility"
 environment/defaults/default_clear_color=Color(0, 0, 0, 1)
 2d/snap/snap_2d_transforms_to_pixel=true
 2d/snap/snap_2d_vertices_to_pixel=true
-=======
-[application]
-
-config/name="Daycare"
-run/main_scene="uid://b1cjj5l68kx0u"
-config/features=PackedStringArray("4.6", "Forward Plus")
-config/icon="res://icon.svg"
-
-[physics]
-
-3d/physics_engine="Jolt Physics"
-
-[rendering]
-
-rendering_device/driver.windows="d3d12"
-environment/defaults/default_clear_color=Color(0, 0, 0, 1)
->>>>>>> 47828c0f07d37aeaadcc7100fc643b6ef17aa8b7
